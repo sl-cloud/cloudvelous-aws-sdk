@@ -1,0 +1,108 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{38223270-12BB-4397-A426-70C33BC7E5B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cloudvelous.Aws.Core", "src\Cloudvelous.Aws.Core\Cloudvelous.Aws.Core.csproj", "{3BA8B102-C638-40B3-86CF-F9B9E61CC22E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cloudvelous.Aws.Sqs", "src\Cloudvelous.Aws.Sqs\Cloudvelous.Aws.Sqs.csproj", "{7A3DC404-1400-4798-A19A-02CD6D0C513F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cloudvelous.Aws.Rds", "src\Cloudvelous.Aws.Rds\Cloudvelous.Aws.Rds.csproj", "{5EFE6D8D-34A6-4FAE-8DB3-50CC7DE1CB96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cloudvelous.Aws.SecretsManager", "src\Cloudvelous.Aws.SecretsManager\Cloudvelous.Aws.SecretsManager.csproj", "{BBF79003-FB50-4A48-A4B4-D0EC88D8097D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cloudvelous.Aws.Lambda", "src\Cloudvelous.Aws.Lambda\Cloudvelous.Aws.Lambda.csproj", "{09D9C4FB-9688-44DE-AA87-22EAFAA7FDE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cloudvelous.Aws.OpenSearch", "src\Cloudvelous.Aws.OpenSearch\Cloudvelous.Aws.OpenSearch.csproj", "{5C8AE497-D599-408B-8700-A8A91CCDB6B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cloudvelous.Aws.DynamoDB", "src\Cloudvelous.Aws.DynamoDB\Cloudvelous.Aws.DynamoDB.csproj", "{4262DB92-EB2C-4456-AAEC-7EBDD3D2BB44}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{4848B376-BD77-4FF7-9F22-2AB828C1E9B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cloudvelous.Aws.Samples.Console", "samples\Cloudvelous.Aws.Samples.Console\Cloudvelous.Aws.Samples.Console.csproj", "{E60D7799-A5FF-4A10-A673-CF4B1A0627DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{4C71FC3D-B900-48DD-AA02-A0FD07DE44CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cloudvelous.Aws.Core.Tests", "tests\Cloudvelous.Aws.Core.Tests\Cloudvelous.Aws.Core.Tests.csproj", "{49AB55A5-889A-4CFE-AFBC-ACDC34B7867F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cloudvelous.Aws.Sqs.Tests", "tests\Cloudvelous.Aws.Sqs.Tests\Cloudvelous.Aws.Sqs.Tests.csproj", "{B439FF4A-DBC5-4D6E-B6DC-8206AEF4493C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cloudvelous.Aws.Rds.Tests", "tests\Cloudvelous.Aws.Rds.Tests\Cloudvelous.Aws.Rds.Tests.csproj", "{93658DEE-9D4D-4CFD-B088-E448A15CB079}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cloudvelous.Aws.SecretsManager.Tests", "tests\Cloudvelous.Aws.SecretsManager.Tests\Cloudvelous.Aws.SecretsManager.Tests.csproj", "{627B33DD-5E15-4FC5-8F54-ACCFD09AE4A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BA8B102-C638-40B3-86CF-F9B9E61CC22E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BA8B102-C638-40B3-86CF-F9B9E61CC22E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BA8B102-C638-40B3-86CF-F9B9E61CC22E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BA8B102-C638-40B3-86CF-F9B9E61CC22E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A3DC404-1400-4798-A19A-02CD6D0C513F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A3DC404-1400-4798-A19A-02CD6D0C513F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A3DC404-1400-4798-A19A-02CD6D0C513F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A3DC404-1400-4798-A19A-02CD6D0C513F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EFE6D8D-34A6-4FAE-8DB3-50CC7DE1CB96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EFE6D8D-34A6-4FAE-8DB3-50CC7DE1CB96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EFE6D8D-34A6-4FAE-8DB3-50CC7DE1CB96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EFE6D8D-34A6-4FAE-8DB3-50CC7DE1CB96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBF79003-FB50-4A48-A4B4-D0EC88D8097D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBF79003-FB50-4A48-A4B4-D0EC88D8097D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBF79003-FB50-4A48-A4B4-D0EC88D8097D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBF79003-FB50-4A48-A4B4-D0EC88D8097D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09D9C4FB-9688-44DE-AA87-22EAFAA7FDE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09D9C4FB-9688-44DE-AA87-22EAFAA7FDE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09D9C4FB-9688-44DE-AA87-22EAFAA7FDE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09D9C4FB-9688-44DE-AA87-22EAFAA7FDE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C8AE497-D599-408B-8700-A8A91CCDB6B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C8AE497-D599-408B-8700-A8A91CCDB6B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C8AE497-D599-408B-8700-A8A91CCDB6B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C8AE497-D599-408B-8700-A8A91CCDB6B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4262DB92-EB2C-4456-AAEC-7EBDD3D2BB44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4262DB92-EB2C-4456-AAEC-7EBDD3D2BB44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4262DB92-EB2C-4456-AAEC-7EBDD3D2BB44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4262DB92-EB2C-4456-AAEC-7EBDD3D2BB44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E60D7799-A5FF-4A10-A673-CF4B1A0627DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E60D7799-A5FF-4A10-A673-CF4B1A0627DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E60D7799-A5FF-4A10-A673-CF4B1A0627DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E60D7799-A5FF-4A10-A673-CF4B1A0627DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49AB55A5-889A-4CFE-AFBC-ACDC34B7867F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49AB55A5-889A-4CFE-AFBC-ACDC34B7867F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49AB55A5-889A-4CFE-AFBC-ACDC34B7867F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49AB55A5-889A-4CFE-AFBC-ACDC34B7867F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B439FF4A-DBC5-4D6E-B6DC-8206AEF4493C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B439FF4A-DBC5-4D6E-B6DC-8206AEF4493C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B439FF4A-DBC5-4D6E-B6DC-8206AEF4493C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B439FF4A-DBC5-4D6E-B6DC-8206AEF4493C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93658DEE-9D4D-4CFD-B088-E448A15CB079}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93658DEE-9D4D-4CFD-B088-E448A15CB079}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93658DEE-9D4D-4CFD-B088-E448A15CB079}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93658DEE-9D4D-4CFD-B088-E448A15CB079}.Release|Any CPU.Build.0 = Release|Any CPU
+		{627B33DD-5E15-4FC5-8F54-ACCFD09AE4A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{627B33DD-5E15-4FC5-8F54-ACCFD09AE4A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{627B33DD-5E15-4FC5-8F54-ACCFD09AE4A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{627B33DD-5E15-4FC5-8F54-ACCFD09AE4A6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3BA8B102-C638-40B3-86CF-F9B9E61CC22E} = {38223270-12BB-4397-A426-70C33BC7E5B2}
+		{7A3DC404-1400-4798-A19A-02CD6D0C513F} = {38223270-12BB-4397-A426-70C33BC7E5B2}
+		{5EFE6D8D-34A6-4FAE-8DB3-50CC7DE1CB96} = {38223270-12BB-4397-A426-70C33BC7E5B2}
+		{BBF79003-FB50-4A48-A4B4-D0EC88D8097D} = {38223270-12BB-4397-A426-70C33BC7E5B2}
+		{09D9C4FB-9688-44DE-AA87-22EAFAA7FDE2} = {38223270-12BB-4397-A426-70C33BC7E5B2}
+		{5C8AE497-D599-408B-8700-A8A91CCDB6B8} = {38223270-12BB-4397-A426-70C33BC7E5B2}
+		{4262DB92-EB2C-4456-AAEC-7EBDD3D2BB44} = {38223270-12BB-4397-A426-70C33BC7E5B2}
+		{E60D7799-A5FF-4A10-A673-CF4B1A0627DC} = {4848B376-BD77-4FF7-9F22-2AB828C1E9B2}
+		{49AB55A5-889A-4CFE-AFBC-ACDC34B7867F} = {4C71FC3D-B900-48DD-AA02-A0FD07DE44CA}
+		{B439FF4A-DBC5-4D6E-B6DC-8206AEF4493C} = {4C71FC3D-B900-48DD-AA02-A0FD07DE44CA}
+		{93658DEE-9D4D-4CFD-B088-E448A15CB079} = {4C71FC3D-B900-48DD-AA02-A0FD07DE44CA}
+		{627B33DD-5E15-4FC5-8F54-ACCFD09AE4A6} = {4C71FC3D-B900-48DD-AA02-A0FD07DE44CA}
+	EndGlobalSection
+EndGlobal
