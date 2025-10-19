@@ -33,6 +33,7 @@
     
     <!-- Versioning -->
     <!-- MinVer will automatically calculate version from Git tags -->
+    <MinVerTagPrefix>v</MinVerTagPrefix>
   </PropertyGroup>
 
   <!-- SourceLink package -->

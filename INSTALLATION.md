@@ -150,5 +150,4 @@ Once installed, check out:
 - [README.md](README.md) - Quick start and usage examples
 - [Package READMEs](src/) - Service-specific documentation
 - [Sample Application](samples/Cloudvelous.Aws.Samples.Console/) - Working examples
-- [Memory Bank](.cursor/memory-bank/memory-bank.md) - Comprehensive system documentation
 
