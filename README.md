@@ -201,7 +201,7 @@ dotnet test tests/Cloudvelous.Aws.Sqs.Tests/
 
 ```bash
 # Clone the repository
-git clone https://github.com/cloudvelous/cloudvelous-aws-sdk.git
+git clone https://github.com/sl-cloud/cloudvelous-aws-sdk.git
 cd cloudvelous-aws-sdk
 
 # Restore dependencies
@@ -233,13 +233,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - 📦 [Installation Guide](INSTALLATION.md) - Detailed setup instructions
 - 📖 [Package Documentation](src/) - Service-specific READMEs
-- 🧠 [Memory Bank](.cursor/memory-bank/memory-bank.md) - System architecture and design
 - 💻 [Sample Application](samples/Cloudvelous.Aws.Samples.Console/) - Working examples
 
 ## Support
 
-- 🐛 [Issue Tracker](https://github.com/cloudvelous/cloudvelous-aws-sdk/issues)
-- 💬 [Discussions](https://github.com/cloudvelous/cloudvelous-aws-sdk/discussions)
+- 🐛 [Issue Tracker](https://github.com/sl-cloud/cloudvelous-aws-sdk/issues)
+- 💬 [Discussions](https://github.com/sl-cloud/cloudvelous-aws-sdk/discussions)
 
 ## Roadmap
 

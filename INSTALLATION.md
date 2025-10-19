@@ -136,7 +136,7 @@ If you encounter issues not covered in this guide:
 
 1. Check the [main README](README.md) for general information
 2. Review the [troubleshooting section](#troubleshooting) above
-3. Search existing [GitHub Issues](https://github.com/cloudvelous/cloudvelous-aws-sdk/issues)
+3. Search existing [GitHub Issues](https://github.com/sl-cloud/cloudvelous-aws-sdk/issues)
 4. Create a new issue with:
    - Your OS and .NET version
    - The exact error message
@@ -150,5 +150,4 @@ Once installed, check out:
 - [README.md](README.md) - Quick start and usage examples
 - [Package READMEs](src/) - Service-specific documentation
 - [Sample Application](samples/Cloudvelous.Aws.Samples.Console/) - Working examples
-- [Memory Bank](.cursor/memory-bank/memory-bank.md) - Comprehensive system documentation
 
