@@ -53,4 +53,4 @@ Configure AWS Core settings in `appsettings.json`:
 
 ## Documentation
 
-For complete documentation, visit: https://github.com/cloudvelous/cloudvelous-aws-sdk
+For complete documentation, visit: https://github.com/sl-cloud/cloudvelous-aws-sdk
