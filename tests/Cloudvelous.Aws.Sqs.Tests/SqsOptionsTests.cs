@@ -38,7 +38,7 @@ public class SqsOptionsTests
 
     [Theory]
     [InlineData(60)]
-    [InlineData(1209600)]
+    [InlineData(86400)]
     [InlineData(1209600)]
     public void DefaultMessageRetentionPeriodSeconds_ShouldAcceptValidValues(int retentionPeriod)
     {
@@ -70,7 +70,7 @@ public class SqsOptionsTests
 
     [Theory]
     [InlineData(1)]
-    [InlineData(10)]
+    [InlineData(5)]
     [InlineData(10)]
     public void MaxReceiveMessages_ShouldAcceptValidValues(int maxMessages)
     {
