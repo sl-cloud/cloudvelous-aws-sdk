@@ -29,14 +29,36 @@ A modular .NET 8 AWS SDK with project-per-service design, providing clean abstra
 
 ### Installation
 
+> 📖 **For detailed installation instructions, see [INSTALLATION.md](INSTALLATION.md)**
+
+These packages are hosted on **GitHub Packages** (private feed). Quick setup:
+
+#### 1. Authenticate to GitHub Packages (One-Time)
+
 ```bash
-# Core package (required for all services)
+dotnet nuget add source https://nuget.pkg.github.com/cloudvelous/index.json \
+  --name PrivateFeed \
+  --username cloudvelous \
+  --password YOUR_GITHUB_TOKEN \
+  --store-password-in-clear-text
+```
+
+> **Note:** Replace `YOUR_GITHUB_TOKEN` with a GitHub Personal Access Token with `read:packages` scope.  
+> See [INSTALLATION.md](INSTALLATION.md) for detailed authentication options.
+
+#### 2. Install Packages
+
+```bash
+# Core package (required)
 dotnet add package Cloudvelous.Aws.Core
 
-# Add specific services as needed
+# Service packages (install as needed)
+dotnet add package Cloudvelous.Aws.SecretsManager
 dotnet add package Cloudvelous.Aws.Sqs
 dotnet add package Cloudvelous.Aws.Rds
-dotnet add package Cloudvelous.Aws.SecretsManager
+dotnet add package Cloudvelous.Aws.Lambda
+dotnet add package Cloudvelous.Aws.DynamoDB
+dotnet add package Cloudvelous.Aws.OpenSearch
 ```
 
 ### Basic Usage
@@ -220,9 +242,15 @@ dotnet run --project samples/Cloudvelous.Aws.Samples.Console/
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## Documentation
+
+- 📦 [Installation Guide](INSTALLATION.md) - Detailed setup instructions
+- 📖 [Package Documentation](src/) - Service-specific READMEs
+- 🧠 [Memory Bank](.cursor/memory-bank/memory-bank.md) - System architecture and design
+- 💻 [Sample Application](samples/Cloudvelous.Aws.Samples.Console/) - Working examples
+
 ## Support
 
-- 📖 [Documentation](docs/)
 - 🐛 [Issue Tracker](https://github.com/cloudvelous/cloudvelous-aws-sdk/issues)
 - 💬 [Discussions](https://github.com/cloudvelous/cloudvelous-aws-sdk/discussions)
 

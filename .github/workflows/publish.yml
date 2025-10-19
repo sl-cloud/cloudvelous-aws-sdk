@@ -24,10 +24,6 @@ jobs:
       with:
         dotnet-version: ${{ env.DOTNET_VERSION }}
 
-    - name: Extract version from tag
-      id: version
-      run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
-
     - name: Restore dependencies
       run: dotnet restore
 
@@ -37,8 +33,8 @@ jobs:
     - name: Test
       run: dotnet test --no-build --configuration Release
 
-    - name: Pack with version
-      run: dotnet pack --no-build --configuration Release --output ./artifacts /p:Version=${{ steps.version.outputs.VERSION }}
+    - name: Pack with MinVer versioning
+      run: dotnet pack --no-build --configuration Release --output ./artifacts
 
-    - name: Publish to NuGet
-      run: dotnet nuget push ./artifacts/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate
+    - name: Publish to Private NuGet Feed
+      run: dotnet nuget push ./artifacts/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://nuget.pkg.github.com/cloudvelous/index.json --skip-duplicate
