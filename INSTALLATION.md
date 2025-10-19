@@ -29,18 +29,18 @@ You have three options for configuring authentication:
 This configures authentication globally on your machine:
 
 ```bash
-dotnet nuget add source https://nuget.pkg.github.com/cloudvelous/index.json \
+dotnet nuget add source https://nuget.pkg.github.com/sl-cloud/index.json \
   --name PrivateFeed \
-  --username cloudvelous \
+  --username YOUR_GITHUB_USERNAME \
   --password YOUR_GITHUB_TOKEN \
   --store-password-in-clear-text
 ```
 
 **For Windows (with Credential Manager):**
 ```bash
-dotnet nuget add source https://nuget.pkg.github.com/cloudvelous/index.json \
+dotnet nuget add source https://nuget.pkg.github.com/sl-cloud/index.json \
   --name PrivateFeed \
-  --username cloudvelous \
+  --username YOUR_GITHUB_USERNAME \
   --password YOUR_GITHUB_TOKEN
 ```
 
@@ -52,7 +52,7 @@ Add a `nuget.config` file to your project root:
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
   <packageSources>
-    <add key="PrivateFeed" value="https://nuget.pkg.github.com/cloudvelous/index.json" />
+    <add key="PrivateFeed" value="https://nuget.pkg.github.com/sl-cloud/index.json" />
     <add key="nuget.org" value="https://api.nuget.org/v3/index.json" protocolVersion="3" />
   </packageSources>
 </configuration>
@@ -61,7 +61,7 @@ Add a `nuget.config` file to your project root:
 Then authenticate:
 ```bash
 dotnet nuget update source PrivateFeed \
-  --username cloudvelous \
+  --username YOUR_GITHUB_USERNAME \
   --password YOUR_GITHUB_TOKEN \
   --store-password-in-clear-text
 ```
@@ -74,9 +74,9 @@ For CI/CD pipelines (GitHub Actions, Azure DevOps, etc.):
 ```yaml
 - name: Authenticate to GitHub Packages
   run: |
-    dotnet nuget add source https://nuget.pkg.github.com/cloudvelous/index.json \
+    dotnet nuget add source https://nuget.pkg.github.com/sl-cloud/index.json \
       --name PrivateFeed \
-      --username cloudvelous \
+      --username ${{ github.actor }} \
       --password ${{ secrets.GITHUB_TOKEN }} \
       --store-password-in-clear-text
 ```
@@ -88,7 +88,7 @@ For CI/CD pipelines (GitHub Actions, Azure DevOps, etc.):
   inputs:
     command: 'custom'
     custom: 'nuget'
-    arguments: 'add source https://nuget.pkg.github.com/cloudvelous/index.json --name PrivateFeed --username cloudvelous --password $(GitHubToken) --store-password-in-clear-text'
+    arguments: 'add source https://nuget.pkg.github.com/sl-cloud/index.json --name PrivateFeed --username $(GitHubUsername) --password $(GitHubToken) --store-password-in-clear-text'
 ```
 
 ## Step 3: Verify Configuration
@@ -105,7 +105,7 @@ Registered Sources:
   1.  nuget.org [Enabled]
       https://api.nuget.org/v3/index.json
   2.  PrivateFeed [Enabled]
-      https://nuget.pkg.github.com/cloudvelous/index.json
+      https://nuget.pkg.github.com/sl-cloud/index.json
 ```
 
 ## Step 4: Install Packages
@@ -196,9 +196,9 @@ dotnet nuget remove source PrivateFeed
 dotnet nuget locals all --clear
 
 # Re-add with new credentials
-dotnet nuget add source https://nuget.pkg.github.com/cloudvelous/index.json \
+dotnet nuget add source https://nuget.pkg.github.com/sl-cloud/index.json \
   --name PrivateFeed \
-  --username cloudvelous \
+  --username YOUR_GITHUB_USERNAME \
   --password YOUR_NEW_GITHUB_TOKEN \
   --store-password-in-clear-text
 ```
@@ -237,9 +237,9 @@ ARG GITHUB_TOKEN
 WORKDIR /src
 
 # Configure NuGet source
-RUN dotnet nuget add source https://nuget.pkg.github.com/cloudvelous/index.json \
+RUN dotnet nuget add source https://nuget.pkg.github.com/sl-cloud/index.json \
     --name PrivateFeed \
-    --username cloudvelous \
+    --username ${GITHUB_USERNAME} \
     --password ${GITHUB_TOKEN} \
     --store-password-in-clear-text
 
@@ -255,7 +255,10 @@ RUN dotnet build "MyApp.csproj" -c Release -o /app/build
 
 Build with:
 ```bash
-docker build --build-arg GITHUB_TOKEN=your_token_here -t myapp .
+docker build \
+  --build-arg GITHUB_USERNAME=your_username \
+  --build-arg GITHUB_TOKEN=your_token_here \
+  -t myapp .
 ```
 
 ## Getting Help

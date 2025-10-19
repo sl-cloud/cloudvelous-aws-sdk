@@ -37,4 +37,4 @@ jobs:
       run: dotnet pack --no-build --configuration Release --output ./artifacts
 
     - name: Publish to Private NuGet Feed
-      run: dotnet nuget push ./artifacts/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://nuget.pkg.github.com/cloudvelous/index.json --skip-duplicate
+      run: dotnet nuget push ./artifacts/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://nuget.pkg.github.com/sl-cloud/index.json --skip-duplicate

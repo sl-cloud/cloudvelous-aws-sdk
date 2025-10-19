@@ -16,8 +16,8 @@
     <Description>Modular .NET 8 AWS SDK with project-per-service design</Description>
     <Copyright>Copyright © Cloudvelous 2024</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/cloudvelous/cloudvelous-aws-sdk</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/cloudvelous/cloudvelous-aws-sdk</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/sl-cloud/cloudvelous-aws-sdk</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/sl-cloud/cloudvelous-aws-sdk</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>aws;aws-sdk;dotnet;cloud</PackageTags>
     

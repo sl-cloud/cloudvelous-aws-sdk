@@ -36,9 +36,9 @@ These packages are hosted on **GitHub Packages** (private feed). Quick setup:
 #### 1. Authenticate to GitHub Packages (One-Time)
 
 ```bash
-dotnet nuget add source https://nuget.pkg.github.com/cloudvelous/index.json \
+dotnet nuget add source https://nuget.pkg.github.com/sl-cloud/index.json \
   --name PrivateFeed \
-  --username cloudvelous \
+  --username YOUR_GITHUB_USERNAME \
   --password YOUR_GITHUB_TOKEN \
   --store-password-in-clear-text
 ```
