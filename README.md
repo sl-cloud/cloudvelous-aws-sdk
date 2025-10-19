@@ -31,22 +31,7 @@ A modular .NET 8 AWS SDK with project-per-service design, providing clean abstra
 
 > 📖 **For detailed installation instructions, see [INSTALLATION.md](INSTALLATION.md)**
 
-These packages are hosted on **GitHub Packages** (private feed). Quick setup:
-
-#### 1. Authenticate to GitHub Packages (One-Time)
-
-```bash
-dotnet nuget add source https://nuget.pkg.github.com/sl-cloud/index.json \
-  --name PrivateFeed \
-  --username YOUR_GITHUB_USERNAME \
-  --password YOUR_GITHUB_TOKEN \
-  --store-password-in-clear-text
-```
-
-> **Note:** Replace `YOUR_GITHUB_TOKEN` with a GitHub Personal Access Token with `read:packages` scope.  
-> See [INSTALLATION.md](INSTALLATION.md) for detailed authentication options.
-
-#### 2. Install Packages
+These packages are publicly available on **NuGet.org**. Install via the .NET CLI:
 
 ```bash
 # Core package (required)
@@ -60,6 +45,8 @@ dotnet add package Cloudvelous.Aws.Lambda
 dotnet add package Cloudvelous.Aws.DynamoDB
 dotnet add package Cloudvelous.Aws.OpenSearch
 ```
+
+Or search for "Cloudvelous.Aws" in the Visual Studio NuGet Package Manager.
 
 ### Basic Usage
 
