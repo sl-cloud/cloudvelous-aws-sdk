@@ -39,16 +39,11 @@ jobs:
     - name: Build
       run: dotnet build --no-restore --configuration Release
 
-    - name: Check MinVer version
-      run: |
-        echo "Checking what version MinVer calculated..."
-        dotnet msbuild src/Cloudvelous.Aws.Core/Cloudvelous.Aws.Core.csproj -getProperty:Version -nologo
-
     - name: Test
       run: dotnet test --no-build --configuration Release
 
     - name: Pack with MinVer versioning
-      run: dotnet pack --no-build --configuration Release --output ./artifacts
+      run: dotnet pack --configuration Release --output ./artifacts
 
     - name: Publish to NuGet.org
       run: dotnet nuget push ./artifacts/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate
