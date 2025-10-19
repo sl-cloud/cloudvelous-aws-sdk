@@ -233,7 +233,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - 📦 [Installation Guide](INSTALLATION.md) - Detailed setup instructions
 - 📖 [Package Documentation](src/) - Service-specific READMEs
-- 🧠 [Memory Bank](.cursor/memory-bank/memory-bank.md) - System architecture and design
 - 💻 [Sample Application](samples/Cloudvelous.Aws.Samples.Console/) - Working examples
 
 ## Support
