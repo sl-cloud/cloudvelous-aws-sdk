@@ -32,13 +32,13 @@
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     
     <!-- Versioning -->
-    <VersionPrefix>1.0.0</VersionPrefix>
-    <VersionSuffix></VersionSuffix>
+    <!-- MinVer will automatically calculate version from Git tags -->
   </PropertyGroup>
 
   <!-- SourceLink package -->
   <ItemGroup Condition="'$(IsTestProject)' != 'true'">
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
+    <PackageReference Include="MinVer" Version="5.0.0" PrivateAssets="All" />
   </ItemGroup>
 
   <!-- Test project configuration -->
