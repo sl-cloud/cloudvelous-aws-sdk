@@ -19,6 +19,15 @@ jobs:
       with:
         fetch-depth: 0
 
+    - name: Fetch all tags
+      run: git fetch --force --tags
+
+    - name: Verify tags
+      run: |
+        echo "Current commit: $(git rev-parse HEAD)"
+        echo "Tags at this commit: $(git tag --points-at HEAD)"
+        echo "All tags: $(git tag -l)"
+
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
@@ -29,6 +38,11 @@ jobs:
 
     - name: Build
       run: dotnet build --no-restore --configuration Release
+
+    - name: Check MinVer version
+      run: |
+        echo "Checking what version MinVer calculated..."
+        dotnet msbuild src/Cloudvelous.Aws.Core/Cloudvelous.Aws.Core.csproj -getProperty:Version -nologo
 
     - name: Test
       run: dotnet test --no-build --configuration Release
